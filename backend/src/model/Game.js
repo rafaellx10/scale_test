@@ -6,9 +6,10 @@ const GameSchema = new Schema(
       type: String,
       require: true,
     },
-    guess: [
+    guesses: [
       {
-        type: Number,
+        type: Schema.Types.ObjectId,
+        ref: 'Guess',
       },
     ],
     game_over: {
