@@ -1,8 +1,10 @@
 import React from 'react';
+
 import './App.css';
+import Routes from './router';
 
 function App() {
-  return <h1>bootstrap</h1>;
+  return <Routes />;
 }
 
 export default App;
